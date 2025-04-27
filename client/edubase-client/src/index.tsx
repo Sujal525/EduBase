@@ -5,5 +5,6 @@ import ReactDOM from 'react-dom/client'; // ✅ Use 'react-dom/client' for React
 import App from './App.tsx';
 import '@coinbase/onchainkit/styles.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement); // 👈 Fix typing with 'as HTMLElement'
+// Ensure the root div is available in index.html (inside public folder)
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(<App />);
