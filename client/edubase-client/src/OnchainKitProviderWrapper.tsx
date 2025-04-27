@@ -11,7 +11,7 @@ interface Props {
 const OnchainKitProviderWrapper: React.FC<Props> = ({ children }) => {
   return (
     <OnchainKitProvider
-      apiKey="1AYaqsh0OBtpJ0qscgDzIhrZh1uoTNoE" // Replace with your actual API key
+      apiKey="api_key" // Replace with your actual API key
       chain={base}
     >
       {children}
